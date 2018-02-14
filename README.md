@@ -47,5 +47,6 @@ Pour récupérer les données, il vous suffit de cliquer sur le fichier pour le 
 Ce jeu de données est issu d'un scraper qui parcourt la partie "Allocations to stationary installations" du EU transactions log. Or nous nous sommes rendu compte avec quelques journalistes européens que plusieurs installations manquaient à l'appel, qui étaient inclues dans la partie "Operator Holding Accounts" du EUTL. 
 
 Heureusement, le monde est rempli de talents généreux. Nathann Cohen, un chercheur en informatique, a pris un peu de son temps libre pour scraper les **236 installations manquantes**. Le résultat est ici ("All Operator Holding accounts") : [https://www.steinertriples.fr/ncohen/data/EU_CO2_LOG/](https://www.steinertriples.fr/ncohen/data/EU_CO2_LOG/) 
-<br>… 15 505 installations. \o/
+
+15 505 installations. \o/
 
