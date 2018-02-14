@@ -15,6 +15,14 @@ To dowload the data, just click on the file.
 
 + Also, a bug has been fixed. From 2013 on, EUTL diferentiates 3 categories of allowances : classic allowances, allowances given under article 10c of the ETS directive (followed by 4 stars), and allowances given as New entrant's reserve (NER) (followed by 5 stars). Those annyoing stars messed up the data ^^. In **Allowance_Allocation_20XX** column, I just separated the 3 figures by a slash, in case you need that granularity. But if you just need the total allowances, **Total_Allowance_Allocation_20XX** is the column you are looking for.
 
+#### 2018 update and caveat
+
+This dataset comes from a scraper that parses the "Allocations to stationary installations" part of the EU transactions log. We realized with a few European journalists that some plants were missing, that were included in the "Operator Holding Accounts" part of the EUTL.
+
+Lucilky, the world is full of helping hands. Nathann Cohen, a skilled computer scientist, took some of his spare time to give a hand scraping the **236 missing plants**. The result is here ("All Operator Holding accounts") :  [https://www.steinertriples.fr/ncohen/data/EU_CO2_LOG/](https://www.steinertriples.fr/ncohen/data/EU_CO2_LOG/).
+
+15 505 plants. \o/
+
 # ETS_data
 Données 2005-2016 du marché européen des quotas de CO2 (ETS)
 
@@ -33,4 +41,11 @@ Pour récupérer les données, il vous suffit de cliquer sur le fichier pour le 
 + Par ailleurs, un bug a été corrigé. En effet pour la phase 3 du système (2013-2020), les cases du registre public européen livrent parfois trois chiffres différents avec des astérisques, différenciant par exemple les quotas gratuits pour les installations relevant de l'article 10c de la directive (électriciens d'Europe de l'Est, en grande partie). Ces chiffres n'étaient pas traités dans la version 2005-2015. Désormais, la somme de ces chiffres est disponible : l'allocation totale est livrée dans les colonnes **Total_Allowance_Allocation_20XX** par année.
 
 + Enfin, pour conserver la granularité de l'information, pour ces installations où plusieurs chiffres étaient précisés concernant les allocations (au titre d'un nouvel entrant, ou bien de l'article 10c de la directive), ces chiffres sont également livrés dans les colonnes **Allowance_Allocation_20XX**, et séparés par des slashs.
+
+#### Actualisation 2018 et mise en garde
+
+Ce jeu de données est issu d'un scraper qui parcourt la partie "Allocations to stationary installations" du EU transactions log. Or nous nous sommes rendu compte avec quelques journalistes européens que plusieurs installations manquaient à l'appel, qui étaient inclues dans la partie "Operator Holding Accounts" du EUTL. 
+
+Heureusement, le monde est rempli de talents généreux. Nathann Cohen, un chercheur en informatique, a pris un peu de son temps libre pour scraper les **236 installations manquantes**. Le résultat est ici ("All Operator Holding accounts") : [https://www.steinertriples.fr/ncohen/data/EU_CO2_LOG/](https://www.steinertriples.fr/ncohen/data/EU_CO2_LOG/) 
+<br>… 15 505 installations. \o/
 
